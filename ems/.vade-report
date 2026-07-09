@@ -1,0 +1,44 @@
+## Vercel Web Analytics Installation
+
+Successfully installed and configured Vercel Web Analytics for this React + Vite project.
+
+### What was implemented:
+
+1. **Package Installation**
+   - Installed `@vercel/analytics` package (v1.4.1) using npm
+   - Updated package.json and package-lock.json with the new dependency
+
+2. **Analytics Integration**
+   - Modified `src/App.jsx` to import the Analytics component from `@vercel/analytics/react`
+   - Added the `<Analytics />` component to the JSX return statement
+   - Placed the component at the root level to track all page views across the application
+
+### Files Modified:
+
+- `package.json` - Added @vercel/analytics dependency
+- `package-lock.json` - Updated with new package and its dependencies
+- `src/App.jsx` - Added Analytics import and component
+
+### Implementation Details:
+
+Following the official Vercel documentation (https://vercel.com/docs/analytics/quickstart), I used the React-specific integration since this is a React application using Vite as the build tool.
+
+The Analytics component was added to the main App component, which ensures analytics tracking works across all routes and views in the application (Login, AdminDashboard, and EmployeeDashboard).
+
+### Verification:
+
+- ✅ Build completed successfully with no errors
+- ✅ Linter ran successfully (no new errors introduced)
+- ✅ All changes preserve existing code structure and functionality
+- ✅ Package lock file updated properly
+
+### Next Steps:
+
+Once this is deployed to Vercel:
+1. Analytics will automatically start tracking page views
+2. You can view analytics data in the Vercel dashboard under your project's Analytics section
+3. Verify tracking by checking the browser's Network tab for requests to Vercel's analytics endpoint
+
+### Notes:
+
+The implementation follows the latest Vercel Web Analytics quickstart guide and uses the recommended approach for React applications. The Analytics component is lightweight and won't impact application performance.
