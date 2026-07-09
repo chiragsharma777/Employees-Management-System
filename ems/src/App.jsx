@@ -3,6 +3,7 @@ import Login from "./components/temp/Login";
 import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
 import AdminDashboard from "./components/Dashboard/AdminDashboard";
 import { AuthContext } from "./context/AuthProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -99,6 +100,7 @@ const App = () => {
           data={loggedInUserData}
         />
       )}
+      <Analytics />
     </>
   );
 };
