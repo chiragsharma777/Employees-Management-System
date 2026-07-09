@@ -1,0 +1,323 @@
+const employees = [
+  {
+    id: 1,
+    firstName: "Rahul",
+    email: "e1@e.com",
+    password: "123",
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Design Homepage",
+        taskDescription: "Create the homepage UI using React and Tailwind CSS.",
+        taskDate: "2026-07-08",
+        category: "Design",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Fix Navbar",
+        taskDescription: "Resolve navbar responsiveness issues.",
+        taskDate: "2026-07-05",
+        category: "Bug Fix",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "API Integration",
+        taskDescription: "Connect employee data with backend API.",
+        taskDate: "2026-07-10",
+        category: "Development",
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    firstName: "Priya",
+    email: "e2@e.com",
+    password: "123",
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+    },
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Create Login Page",
+        taskDescription: "Build login page with validation.",
+        taskDate: "2026-07-08",
+        category: "Frontend",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Footer Design",
+        taskDescription: "Complete responsive footer section.",
+        taskDate: "2026-07-04",
+        category: "Design",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Dark Mode",
+        taskDescription: "Implement dark mode toggle.",
+        taskDate: "2026-07-06",
+        category: "Feature",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Profile Page",
+        taskDescription: "Create employee profile page.",
+        taskDate: "2026-07-11",
+        category: "Frontend",
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    firstName: "Aman",
+    email: "e3@e.com",
+    password: "123",
+    taskNumbers: {
+      active: 3,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+    },
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Dashboard UI",
+        taskDescription: "Develop employee dashboard.",
+        taskDate: "2026-07-08",
+        category: "UI",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Sidebar",
+        taskDescription: "Finish sidebar navigation.",
+        taskDate: "2026-07-03",
+        category: "Frontend",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Charts",
+        taskDescription: "Integrate analytics charts.",
+        taskDate: "2026-07-02",
+        category: "Analytics",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Notifications",
+        taskDescription: "Implement notification panel.",
+        taskDate: "2026-07-12",
+        category: "Feature",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Search Employees",
+        taskDescription: "Add employee search functionality.",
+        taskDate: "2026-07-13",
+        category: "Development",
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    firstName: "Neha",
+    email: "e4@e.com",
+    password: "123",
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+    },
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Employee Form",
+        taskDescription: "Build add employee form.",
+        taskDate: "2026-07-08",
+        category: "Forms",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Validation",
+        taskDescription: "Complete form validation.",
+        taskDate: "2026-07-04",
+        category: "Validation",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Update Employee",
+        taskDescription: "Implement edit employee feature.",
+        taskDate: "2026-07-10",
+        category: "CRUD",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Delete Employee",
+        taskDescription: "Implement delete confirmation modal.",
+        taskDate: "2026-07-07",
+        category: "CRUD",
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    firstName: "Vikram",
+    email: "e5@e.com",
+    password: "123",
+    taskNumbers: {
+      active: 4,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+    },
+    tasks: [
+      {
+        active: true,
+        newTask: true,
+        completed: false,
+        failed: false,
+        taskTitle: "Testing",
+        taskDescription: "Test all employee modules.",
+        taskDate: "2026-07-08",
+        category: "Testing",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false,
+        taskTitle: "Bug Report",
+        taskDescription: "Prepare bug report document.",
+        taskDate: "2026-07-05",
+        category: "Documentation",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Performance Optimization",
+        taskDescription: "Improve application loading speed.",
+        taskDate: "2026-07-12",
+        category: "Optimization",
+      },
+      {
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true,
+        taskTitle: "Export Data",
+        taskDescription: "Implement CSV export functionality.",
+        taskDate: "2026-07-09",
+        category: "Feature",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Deploy Project",
+        taskDescription: "Deploy the EMS project to production.",
+        taskDate: "2026-07-15",
+        category: "Deployment",
+      },
+      {
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false,
+        taskTitle: "Write Documentation",
+        taskDescription: "Complete project documentation.",
+        taskDate: "2026-07-16",
+        category: "Documentation",
+      },
+    ],
+  },
+];
+
+const admin = [
+  {
+    id: 101,
+    firstName: "Admin",
+    email: "admin@me.com",
+    password: "123",
+  },
+];
+
+export const setLocalStorage = () => {
+  // Only initialize localStorage once
+  if (!localStorage.getItem("employees")) {
+    localStorage.setItem("employees", JSON.stringify(employees));
+  }
+
+  if (!localStorage.getItem("admin")) {
+    localStorage.setItem("admin", JSON.stringify(admin));
+  }
+};
+
+export const getLocalStorage = () => {
+  return {
+    employees: JSON.parse(localStorage.getItem("employees")) || [],
+    admin: JSON.parse(localStorage.getItem("admin")) || [],
+  };
+};
